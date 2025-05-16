@@ -1,5 +1,11 @@
 ## Changelog
 
+## [0.2.0] – 2025-05-16
+### Added
+- Magnet System for coins
+- Coins move toward player after entering MagnetZone
+- XP and Score are added on collection
+
 ## [v0.2.0] - 2025-05-16
 
 ### Added
