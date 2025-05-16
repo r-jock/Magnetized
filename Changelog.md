@@ -1,6 +1,6 @@
 ## Changelog
 
-## [0.2.0] – 2025-05-16
+## [0.2.1] – 2025-05-16
 ### Added
 - Magnet System for coins
 - Coins move toward player after entering MagnetZone
