@@ -8,7 +8,6 @@ public class GameManagerScript : MonoBehaviour
     // Referenz Gameobjects
     public static GameManagerScript instance;
     public Text scoreText;
-
     public Text levelText;
     public Text xpText;
 
