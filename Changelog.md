@@ -1,5 +1,11 @@
 ## Changelog
 
+## [Unreleased]
+### Fixed
+- 🪙 Coins are now correctly destroyed after reaching the player when magnetized.
+- ✅ CircleCollider2D on coins now correctly set to trigger.
+- ⚙️ Added minDistance check to prevent lingering coins.
+
 ## [0.2.1] – 2025-05-16
 ### Added
 - Magnet System for coins
