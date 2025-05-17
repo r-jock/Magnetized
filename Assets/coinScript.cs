@@ -36,10 +36,11 @@ public class coinScript : MonoBehaviour
                 playerTransform.position,
                 magnetSpeed * Time.deltaTime
             );
-            if (Vector2.Distance(transform.position, playerTransform.position) < minDistance)
-            {
-                Destroy(gameObject);
-            }
+        if (Vector2.Distance(transform.position, playerTransform.position) < minDistance)
+        {
+            Debug.Log("Destroy triggert");
+            Destroy(gameObject);
+        }
             
         }
     }
