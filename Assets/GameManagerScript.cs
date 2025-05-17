@@ -11,6 +11,8 @@ public class GameManagerScript : MonoBehaviour
     public Text levelText;
     public Text xpText;
 
+    public Text version;
+
     // Variablen
     public int score;
     private float xp;
@@ -40,6 +42,8 @@ public class GameManagerScript : MonoBehaviour
         xp = 0;
         score = 0;
         Level = 0;
+
+        version.text = Application.version;
 
         xpText.text = Mathf.FloorToInt(xp) + " / " + Mathf.FloorToInt(xpToLevelUp);
     }
