@@ -80,7 +80,7 @@ public class GameManagerScript : MonoBehaviour
             Debug.Log("You have already reached Max Level");
         }
 
-        xpToLevelUp += xpToLevelUpFactor;
+        xpToLevelUp *= xpToLevelUpFactor;
         levelText.text = "Level: " + Level;
     }
 }
