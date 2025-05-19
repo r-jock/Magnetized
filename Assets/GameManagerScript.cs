@@ -19,6 +19,9 @@ public class GameManagerScript : MonoBehaviour
     public Text XpPopUpText;
     public GameObject XpPopUpObject;
 
+    public Text LevelUpPopUpText;
+    public GameObject LevelUpPopUpObject;
+
     // Variablen
     public int score;
     private float xp;
@@ -76,8 +79,9 @@ public class GameManagerScript : MonoBehaviour
         }
 
         xpText.text = Mathf.FloorToInt(xp) + " / " + Mathf.FloorToInt(xpToLevelUp);
+        
         XpPopUpObject.SetActive(true);
-        XpPopUpText.text = "+" + xp + "XP"; 
+        XpPopUpText.text = "+" + Mathf.FloorToInt(xpAmount) + "XP";
         Invoke("HideXpPopUpObject", 3f);
     }
 
@@ -95,6 +99,10 @@ public class GameManagerScript : MonoBehaviour
 
         xpToLevelUp *= xpToLevelUpFactor;
         levelText.text = "Level: " + Level;
+
+        LevelUpPopUpObject.SetActive(true);
+        LevelUpPopUpText.text = "You reached Level " + Level;
+        Invoke("HideLevelUpPopUpObject", 3f);
     }
 
     public void HideScorePopUpObject()
@@ -105,5 +113,10 @@ public class GameManagerScript : MonoBehaviour
     public void HideXpPopUpObject()
     {
         XpPopUpObject.SetActive(false);
+    }
+
+    public void HideLevelUpPopUpObject()
+    {
+        LevelUpPopUpObject.SetActive(false);
     }
 }
