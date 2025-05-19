@@ -1,5 +1,12 @@
 ## Changelog
 
+## [0.2.0] – 2025-05-17
+
+### Added
+- ✨ Basic popup system for score and XP gain
+- Popups appear when collecting coins or gaining XP
+- Popups automatically disappear after 3 seconds
+
 ## [Unreleased]
 ### Fixed
 - 🪙 Coins are now correctly destroyed after reaching the player when magnetized.
